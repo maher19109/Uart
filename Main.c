@@ -64,10 +64,7 @@ void __attribute__((__interrupt__, auto_psv)) _U1RXInterrupt(void){
     LATAbits.LATA2 = 1; // Start time
     LATAbits.LATA0 = 0 ;
     IFS0bits.U1RXIF = 0; // Receive flag clear
-    
-    
-    
-    //__delay_ms(500);
+  
     
     char rx = U1RXREG;
   
